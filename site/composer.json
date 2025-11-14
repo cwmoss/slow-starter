@@ -1,0 +1,8 @@
+{
+    "name": "rw/site",
+    "type": "project",
+    "require": {
+        "cwmoss/slowfoot": "dev-main"
+    },
+    "minimum-stability": "dev"
+}

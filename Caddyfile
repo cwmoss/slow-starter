@@ -1,0 +1,21 @@
+{
+  # Enable FrankenPHP
+  frankenphp
+  # Configure when the directive must be executed
+  order php_server before file_server
+}
+
+:8001 {
+  root * /app/site/dist
+  # Enable compression (optional)
+  encode zstd br gzip
+  file_server
+}
+
+:8002 {
+  root * /app/cms/backend/public/
+  # Enable compression (optional)
+  encode zstd br gzip
+  # Execute PHP files in the current directory and serve assets
+  php_server
+}

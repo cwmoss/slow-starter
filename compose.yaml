@@ -1,0 +1,20 @@
+services:
+  web:
+    image: site-frankenphp
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app/
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - /Users/rw/dev/slowhand/:/app/cms/
+      - /Users/rw/dev/pickel/:/app/pickel/
+    ports:
+      - 9901:8001
+      - 9902:8002
+  #install:
+  #  image: wolfi-php
+  #  volumes:
+  #    - ./:/app
+  #  restart: no
+  #  entrypoint: ["sh"]

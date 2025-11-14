@@ -1,0 +1,20 @@
+.top_nav---691769b8eff8f{
+
+    &.root {
+        display: flex;
+        gap: 1rem;
+    }
+
+    a {
+        color: pink;
+        background-color: black;
+        font-weight: bold;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .active {
+        outline: 5px solid gold;
+    }
+
+}
