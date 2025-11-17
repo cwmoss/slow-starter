@@ -1,0 +1,30 @@
+images:
+  gimage:
+    fields:
+      caption:
+      double:
+        type: boolean
+      padding:
+        type: string
+  image:
+obj:
+  gallery:
+    fields:
+      intro:
+        type: text
+      images:
+        component: photog.RwGallery
+        type: array
+        of: gimage
+
+doc:
+  gallery_page:
+    fields:
+      title:
+      slug:
+      poster:
+        type: image
+      photos:
+        type: gallery
+    preview:
+      media: poster

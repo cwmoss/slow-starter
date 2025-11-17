@@ -1,0 +1,16 @@
+images:
+  defaultImage:
+    fields:
+      caption:
+
+doc:
+  booking:
+    preview:
+      title: fname lname
+    fields:
+      lname:
+      fname:
+      email:
+      phone:
+      remarks:
+        type: text

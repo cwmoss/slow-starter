@@ -13,7 +13,7 @@
 }
 
 :8002 {
-  root * /app/cms/backend/public/
+  root * /app/slowhand/backend/public/
   # Enable compression (optional)
   encode zstd br gzip
   # Execute PHP files in the current directory and serve assets
