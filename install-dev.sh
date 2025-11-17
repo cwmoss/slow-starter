@@ -23,3 +23,6 @@ ln -s ../pickel studio
         -e \"SELECT JSON_OBJECT('key', value) FROM table\" |
     jq --slurp --ascii-output ." \
     > dump.json
+
+# git rm --cached slowhand
+# git rm --cached pickel
