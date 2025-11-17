@@ -2,3 +2,5 @@
 store/
 .env
 *.jsonl
+slowhand/
+pickel/
