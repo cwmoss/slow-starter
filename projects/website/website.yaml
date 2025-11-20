@@ -1,0 +1,43 @@
+images:
+  defaultImage:
+    fields:
+      caption:
+obj:
+
+doc:
+  site:
+    preview:
+      title: descr
+
+    fields:
+      descr:
+        title: url
+      navigation:
+        type: array
+        of:
+          - type: reference
+            to: menuitem
+  menuitem:
+    preview:
+      title: descr
+      subtitle: site._ref
+    fields:
+      descr:
+      url:
+      site:
+        type: reference
+        to: site
+  article:
+    preview:
+      title: title
+      subtitle: site._ref
+    fields:
+      title:
+      text:
+        type: text
+      site:
+        type: reference
+        to: site
+      menu:
+        type: reference
+        to: menuitem

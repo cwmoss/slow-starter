@@ -2,15 +2,50 @@ images:
   defaultImage:
     fields:
       caption:
-
+obj:
+  paypal:
+    fields:
+      payid:
+      token:
+      status:
+      amount:
+        type: number
+      payer:
 doc:
   booking:
     preview:
       title: fname lname
+
     fields:
       lname:
+        title: Vorname
       fname:
+        title: Nachname
+      start_date:
+        title: Anreise
+        type: date
+      end_date:
+        title: Abreise
+        type: date
       email:
       phone:
       remarks:
+        type: text
+      booked_at:
+        title: Gebucht am
+        type: datetime
+      paypal:
+        type: paypal
+      ressort:
+        type: reference
+        to: ressort
+  ressort:
+    fields:
+      name:
+      email:
+      address:
+      slug:
+      poster:
+        type: defaultImage
+      description:
         type: text
