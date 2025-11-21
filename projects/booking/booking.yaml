@@ -14,8 +14,7 @@ obj:
 doc:
   booking:
     preview:
-      title: fname lname
-
+      _select: fname lname start_date end_date
     fields:
       lname:
         title: Vorname
@@ -40,6 +39,9 @@ doc:
         type: reference
         to: ressort
   ressort:
+    preview:
+      title: name
+      subtitle: email
     fields:
       name:
       email:

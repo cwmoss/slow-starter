@@ -1,5 +1,6 @@
 <?php
 
+use plugin\slowhand\loader;
 use slowfoot\configuration;
 use slowfoot\image\profile;
 use slowfoot\loader\json;
@@ -11,12 +12,12 @@ return new configuration(
   site_name: "I ❤️ my cat",
 
   sources: [
-    "content" => new markdown\loader('content/**/*.md', remove_prefix: "content/"),
+    "cms" => new loader('q(_type=="page" || _type=="article" || _type=="site")'),
     //  'chapter_index' => site::load_chapter_index(...)
   ],
 
   templates: [
-    'content' => '/meine-seiteninhalte/:slug',
+    'article' => '/:site._ref/:_id',
   ],
 
   plugins: [

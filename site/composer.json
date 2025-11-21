@@ -1,8 +1,14 @@
 {
     "name": "rw/site",
     "type": "project",
+    "autoload": {
+        "psr-4": {
+            "plugin\\slowhand\\": "lib/slowhand"
+        }
+    },
     "require": {
-        "cwmoss/slowfoot": "dev-main"
+        "cwmoss/slowfoot": "dev-main",
+        "guzzlehttp/guzzle": "^7"
     },
     "minimum-stability": "dev"
 }

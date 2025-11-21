@@ -1,8 +1,10 @@
 <layout.default>
   <article>
-    <h1>hello</h1>
+    <h1>hello at</h1>
 
-    <p>to the world</p>
+
+    <p :foreach="articles as article">t <a :href="helper.path(article)">{{article.title}} {{article._id}}</a>
+    </p>
 
     <sft.image src="src/pages/kitty.jpg" size="600x" alt="this is the cat"></sft.image>
 
@@ -13,3 +15,7 @@
 
 
 </layout.default>
+
+<?php
+$articles = $helper->query('*(_type=="article" && site._ref== "www.wasserturm-badsaarow.de")');
+// helper.path(article._id)

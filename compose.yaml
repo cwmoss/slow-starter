@@ -16,6 +16,7 @@ services:
     ports:
       - 9901:8001
       - 9902:8002
+      - 9903:1199
   #install:
   #  image: wolfi-php
   #  volumes:

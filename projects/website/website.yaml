@@ -26,7 +26,8 @@ doc:
       url:
       site:
         type: reference
-        to: site
+        to:
+          - type: site
   article:
     preview:
       title: title
@@ -37,7 +38,9 @@ doc:
         type: text
       site:
         type: reference
-        to: site
+        to:
+          - type: site
       menu:
         type: reference
-        to: menuitem
+        to:
+          - type: menuitem
