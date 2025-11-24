@@ -31,7 +31,8 @@ from
             modified_at as _updatedAt,
             json_object (array['_ref', '_type'], array[(select site from structures where id=art.str_id),'site']) as site,
             json_object (array['_ref', '_type'], array['n'||str_id,'menuitem']) as menu,
-            *
+            *,
+            json_object (array['current'], array[slug]) as slug
         from
             kyff_articles art
         where

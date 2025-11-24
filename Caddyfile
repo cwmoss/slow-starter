@@ -10,6 +10,12 @@
   # Enable compression (optional)
   encode zstd br gzip
   file_server
+
+# Alias /__web-deploy /var/www/vhosts/kurparkverlag/slowfoot/web-deploy/index.php
+  handle_path /__webdeploy/* {
+    root * /app/site/webdeploy/
+    php_server
+  }
 }
 
 :8002 {

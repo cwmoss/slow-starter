@@ -13,6 +13,7 @@ services:
     environment:
       - SLOWHAND_VAR=/app/store
       - SLOWHAND_PROJECTS=/app/projects
+      - SLFT_BUILD_KEY=1234
     ports:
       - 9901:8001
       - 9902:8002
