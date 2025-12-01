@@ -17,6 +17,8 @@ EOF
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
+ENV TERM=xterm-256color
+
 WORKDIR /app
 USER www-data
 EXPOSE 8001 8002 8003

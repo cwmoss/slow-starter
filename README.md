@@ -15,3 +15,14 @@ start dev server
 hook build
 
     curl -vv http://localhost:9901/__webdeploy/ -H 'x-slft-deploy: 1234'
+
+roadmap
+
+    - new: 1 schema per website/bookings
+    - auth
+    - ui fixes for slug, refs, md text...
+    - ui, list of uploads
+    - link type
+    - deploy button
+    - structure editor
+    - backend: why slow w/ franken? check run from cli. remove frameworkx? add php-di
