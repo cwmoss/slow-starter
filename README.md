@@ -26,3 +26,9 @@ roadmap
     - deploy button
     - structure editor
     - backend: why slow w/ franken? check run from cli. remove frameworkx? add php-di
+
+create user
+
+    curl -vv http://localhost:9902/auth/register -H 'x-slowhand-admin-secret: 123456' -H 'Content-type: application/json' --data '{"email":"rw@20sec.net","password":"xyz123456","name":"rw", "password_confirmation":"xyz123456"}
+
+    curl -vv http://localhost:9902/auth/login -H 'Content-type: application/json' --data '{"email":"rw@20sec.net","password":"xyz123456"}'

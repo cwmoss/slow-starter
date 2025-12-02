@@ -13,6 +13,7 @@ services:
     environment:
       - SLOWHAND_VAR=/app/store
       - SLOWHAND_PROJECTS=/app/projects
+      - SLOWHAND_ADMIN_SECRET=123456
       - SLFT_BUILD_KEY=1234
     ports:
       - 9901:8001
