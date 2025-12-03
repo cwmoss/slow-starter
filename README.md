@@ -1,4 +1,4 @@
-# dev
+# slowfoot dev
 
 adding composer packages to project
 
@@ -32,3 +32,9 @@ create user
     curl -vv http://localhost:9902/auth/register -H 'x-slowhand-admin-secret: 123456' -H 'Content-type: application/json' --data '{"email":"rw@20sec.net","password":"xyz123456","name":"rw", "password_confirmation":"xyz123456"}
 
     curl -vv http://localhost:9902/auth/login -H 'Content-type: application/json' --data '{"email":"rw@20sec.net","password":"xyz123456"}'
+
+# slowhand dev
+
+    git clone https://github.com/cwmoss/pickel
+    git clone git@git.20sec.de:/opt/git/slowhand.git
+    docker compose exec web composer -d slowhand/backend install
