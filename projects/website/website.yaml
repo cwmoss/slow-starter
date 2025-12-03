@@ -3,6 +3,34 @@ images:
     fields:
       caption:
 obj:
+  link_address:
+    title: Link
+    preview:
+      __title: js`${o.internal?.title} ${o.external} ${o.route}`
+      subtitle: characterName
+    fields:
+      internal:
+        title: Interner Verweis
+        type: reference
+        to:
+          - type: article
+      route:
+        title: Interne URL (slug/path)
+        description: Some path that is created by SSG, not controlled by CMS
+        type: url
+      external:
+        title: Externe URL
+        description: Use fully qualified URLS for external link
+        type: url
+
+  link:
+    title: Navigationslink
+    fields:
+      label:
+        title: Bezeichnung
+        type: string
+      link:
+        type: link_address
 
 doc:
   site:
@@ -17,17 +45,16 @@ doc:
         of:
           - type: reference
             to: menuitem
-  menuitem:
+  navigation:
     preview:
       title: descr
-      subtitle: site._ref
     fields:
       descr:
-      url:
-      site:
-        type: reference
-        to:
-          - type: site
+      items:
+        type: array
+        of:
+          - type: link
+
   article:
     preview:
       title: title
@@ -42,7 +69,7 @@ doc:
         type: reference
         to:
           - type: site
-      menu:
+      menu_hili:
         type: reference
         to:
-          - type: menuitem
+          - type: article

@@ -1,8 +1,12 @@
 # slowfoot dev
 
+update site
+
+    docker compose exec web composer -d site/ update
+
 adding composer packages to project
 
-    docker compose exec web composer -d site require guzzle/httpd
+    docker compose exec web composer -d site/ require guzzle/httpd
 
     # visit localhost:9901 => built site
     # visit localhost:9902/studio => cms
@@ -12,7 +16,11 @@ start dev server
     docker compose exec web site/vendor/bin/slowfoot dev -d /app/site
     # visit localhost:9903
 
-hook build
+build via cli
+
+    docker compose exec web site/vendor/bin/slowfoot build -d /app/site
+
+build via webhook
 
     curl -vv http://localhost:9901/__webdeploy/ -H 'x-slft-deploy: 1234'
 
@@ -38,3 +46,4 @@ create user
     git clone https://github.com/cwmoss/pickel
     git clone git@git.20sec.de:/opt/git/slowhand.git
     docker compose exec web composer -d slowhand/backend install
+    docker compose exec web slowhand/backend/bin/slowhand setup

@@ -3,7 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "plugin\\slowhand\\": "lib/slowhand"
+            "slowfoot_plugin\\slowhand\\": "lib/slowhand/src"
         }
     },
     "require": {

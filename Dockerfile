@@ -10,7 +10,7 @@ apk add --no-cache frankenphp-8.4 php-frankenphp-8.4 \
     php-frankenphp-8.4-dom php-frankenphp-8.4-intl php-frankenphp-8.4-mbstring php-frankenphp-8.4-openssl \
     php-frankenphp-8.4-phar php-frankenphp-8.4-curl php-frankenphp-8.4-sockets php-frankenphp-8.4-xml php-frankenphp-8.4-xmlwriter \
     php-frankenphp-8.4-fileinfo php-frankenphp-8.4-exif php-frankenphp-8.4-posix \
-    php-frankenphp-8.4-ffi libvips curl
+    php-frankenphp-8.4-ffi libvips curl openssl
 
 adduser -u 82 www-data -D
 EOF
