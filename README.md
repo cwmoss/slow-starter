@@ -47,3 +47,10 @@ create user
     git clone git@git.20sec.de:/opt/git/slowhand.git
     docker compose exec web composer -d slowhand/backend install
     docker compose exec web slowhand/backend/bin/slowhand setup
+
+
+# all dev
+
+    git pull
+    cd pickel; git pull cd ..;
+    cd slowhand; git pull; cd ..;
