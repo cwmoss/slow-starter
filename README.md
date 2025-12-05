@@ -37,7 +37,7 @@ roadmap
 
 create user
 
-    curl -vv http://localhost:9902/auth/register -H 'x-slowhand-admin-secret: 123456' -H 'Content-type: application/json' --data '{"email":"rw@20sec.net","password":"xyz123456","name":"rw", "password_confirmation":"xyz123456"}
+    curl -vv http://localhost:9902/auth/register -H 'x-slowhand-admin-secret: 123456' -H 'Content-type: application/json' --data '{"email":"rw@20sec.net","password":"xyz123456","name":"rw", "password_confirmation":"xyz123456"}'
 
     curl -vv http://localhost:9902/auth/login -H 'Content-type: application/json' --data '{"email":"rw@20sec.net","password":"xyz123456"}'
 
@@ -52,5 +52,5 @@ create user
 # all dev
 
     git pull
-    cd pickel; git pull cd ..;
+    cd pickel; git pull; cd ..;
     cd slowhand; git pull; cd ..;
