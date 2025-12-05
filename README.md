@@ -26,14 +26,15 @@ build via webhook
 
 roadmap
 
-    - new: 1 schema per website/bookings
-    - auth
+    - OK new: 1 schema per website/bookings
+    - OK auth
     - ui fixes for slug, refs, md text...
     - ui, list of uploads
-    - link type
-    - deploy button
+    - OK link type
+    - OK deploy button
     - structure editor
     - backend: why slow w/ franken? check run from cli. remove frameworkx? add php-di
+    - website: start template w/ navigation and images 
 
 create user
 
