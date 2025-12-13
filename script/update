@@ -2,6 +2,7 @@
 
 git pull; cd pickel; git pull; cd ..; cd slowhand; git pull; cd ..;
 
+docker compose up -d
 docker compose exec web composer -d site/ update
 docker compose exec web composer -d slowhand/backend update
 docker compose exec web slowhand/backend/bin/slowhand setup
