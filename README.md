@@ -9,7 +9,7 @@ adding composer packages to project
     docker compose exec web composer -d site/ require guzzle/httpd
 
     # visit localhost:9901 => built site
-    # visit localhost:9902/studio => cms
+    # visit localhost:9902/studio/ => cms
 
 start dev server
 
@@ -32,7 +32,7 @@ roadmap
     - ui, list of uploads
     - OK link type
     - OK deploy button
-    - structure editor
+    - OK structure editor
     - backend: why slow w/ franken? check run from cli. remove frameworkx? add php-di
     - website: start template w/ navigation and images 
 

@@ -9,7 +9,9 @@ use slowfoot_plugin\markdown;
 use slowfoot_plugin\phuety\phuety_adapter;
 use slowfoot_plugin\slowhand;
 
-$sh = new slowhand\slowhand('http://localhost:8002', 'website', $_SERVER['SLOWHAND_ADMIN_SECRET']);
+
+
+$sh = new slowhand\slowhand('http://localhost:8002', 'website', $_ENV['SLOWHAND_ADMIN_SECRET'] ?? $_SERVER['SLOWHAND_ADMIN_SECRET']);
 
 return new configuration(
   site_name: "I ❤️ my cat",

@@ -6,6 +6,12 @@
             "slowfoot_plugin\\slowhand\\": "lib/slowhand/src"
         }
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/cwmoss/slowfoot"
+        }
+    ],
     "require": {
         "cwmoss/slowfoot": "dev-main",
         "guzzlehttp/guzzle": "^7"
